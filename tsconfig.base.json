@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"moduleDetection": "force",
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noUncheckedSideEffectImports": true,
+		"noImplicitOverride": true,
+		"skipLibCheck": true
+	}
+}
