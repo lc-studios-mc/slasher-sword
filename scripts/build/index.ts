@@ -1,18 +1,11 @@
-type BuildOptions = {
-	dev: boolean;
+import type { ProjectConfig } from "../project";
+
+type BuildContext = {
+	projectConfig: ProjectConfig;
 };
 
-const executeBuild = async (options: BuildOptions): Promise<void> => {
+export const build = async (ctx: BuildContext): Promise<void> => {
 	console.log("Building...");
-};
 
-export const build = async (options: BuildOptions): Promise<void> => {
-	const startTime = performance.now();
-
-	await executeBuild(options);
-
-	const endTime = performance.now();
-	const totalTimeText = (endTime - startTime).toFixed(2);
-
-	console.log(`Build finished in ${totalTimeText} ms!`);
+	// TODO: Implement build
 };
