@@ -25,9 +25,18 @@ const parseVersionString = (versionString: string): number[] => {
 	return numbers;
 };
 
-export type ProjectConfig = ReturnType<typeof getProjectConfig>;
+export type ProjectConfig = {
+	bpManifest: Record<string, unknown>;
+	bpSrcDir: string;
+	bpOutDir: string;
+	bpSyncTargets: string[];
+	rpManifest: Record<string, unknown>;
+	rpSrcDir: string;
+	rpOutDir: string;
+	rpSyncTargets: string[];
+};
 
-export const getProjectConfig = (dev: boolean, versionString: string) => {
+export const getProjectConfig = (dev: boolean, versionString: string): ProjectConfig => {
 	const slug = "slasher-sword";
 	const projectName = "Slasher Sword";
 	const description = "Fun chainsaw/sword addon by LC Studios MC";
