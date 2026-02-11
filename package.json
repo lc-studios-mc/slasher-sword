@@ -4,6 +4,7 @@
 	"scripts": {
 		"build": "node --env-file=.env --import=tsx/esm scripts/cli/build.ts --dev",
 		"build:dev": "node --env-file=.env --import=tsx/esm scripts/cli/build.ts --dev",
+		"clean": "shx rm -rf dist",
 		"format": "prettier --write ."
 	},
 	"dependencies": {
