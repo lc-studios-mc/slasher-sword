@@ -6,6 +6,9 @@
 		"build:dev": "node --env-file=.env --import=tsx/esm scripts/cli/build.ts --dev",
 		"format": "prettier --write ."
 	},
+	"dependencies": {
+		"@minecraft/server": "2.5.0"
+	},
 	"devDependencies": {
 		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^24.10.12",
