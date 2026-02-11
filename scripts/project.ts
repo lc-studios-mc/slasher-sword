@@ -82,6 +82,10 @@ export const getProjectConfig = (dev: boolean, versionString: string): ProjectCo
 				uuid: uuid.rpHeader,
 				version: versionArray,
 			},
+			{
+				module_name: "@minecraft/server",
+				version: "2.5.0",
+			},
 		],
 	};
 
